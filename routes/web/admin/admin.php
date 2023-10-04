@@ -17,15 +17,13 @@ Auth::routes();
 
 /*------------All Normal Users Routes List-------------*/
 Route::middleware(['auth', 'user-access:admin'])->prefix('admin')->group(function () {
-    Route::get('/', [App\Http\Controllers\Web\Admin\Organization\IndexController::class, 'index'])->name('admin.index');
+    Route::get('/', [App\Http\Controllers\Web\Admin\IndexController::class, 'index'])->name('admin.index');
+    Route::prefix('organizations')->group(function () {
+        Route::get('/', [App\Http\Controllers\Web\Admin\Organization\IndexController::class, 'index'])->name('organization.index');
+        Route::get('/add', [App\Http\Controllers\Web\Admin\Organization\IndexController::class, 'create'])->name('organization.create');
+        Route::post('/store', [App\Http\Controllers\Web\Admin\Organization\IndexController::class, 'store'])->name('organization.store');
+        Route::get('/edit/{id}', [App\Http\Controllers\Web\Admin\Organization\IndexController::class, 'edit'])->name('organization.edit');
+        Route::post('/update/{id}', [App\Http\Controllers\Web\Admin\Organization\IndexController::class, 'update'])->name('organization.update');
+        Route::delete('/destroy/{id}', [App\Http\Controllers\Web\Admin\Organization\IndexController::class, 'destroy'])->name('organization.destroy');
+    });
 });
-
-// /*----------All Admin Routes List---------*/
-// Route::middleware(['auth', 'user-access:admin'])->group(function () {
-//     Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
-// });
-
-// /*------All Member Routes List-----------*/
-// Route::middleware(['auth', 'user-access:member'])->group(function () {
-//     Route::get('/member/home', [HomeController::class, 'memberHome'])->name('member.home');
-// });
