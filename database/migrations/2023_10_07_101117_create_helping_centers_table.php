@@ -11,14 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('organizations', function (Blueprint $table) {
+        Schema::create('helping_centers', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('email')->unique()->nullable();
+            $table->string('name');
+            $table->string('address');
             $table->string('phone')->nullable();
-            $table->string('address')->nullable();
-            $table->string('estd')->nullable();
-            $table->string('contact_person')->nullable();
+            $table->text('description')->nullable();
+            // Add user_id field for the relationship
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('organizations');
+        Schema::dropIfExists('helping_centers');
     }
 };

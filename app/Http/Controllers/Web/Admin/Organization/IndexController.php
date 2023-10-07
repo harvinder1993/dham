@@ -48,7 +48,7 @@ class IndexController extends Controller
         ]);
         
         // Redirect to a success page or return a response
-        return redirect()->route('organization.index')->with('success', 'Organization added successfully!');
+        return redirect()->route('admin.organization.index')->with('success', 'Organization added successfully!');
     }
 
     /**
@@ -79,7 +79,7 @@ class IndexController extends Controller
 
         // Update the organization record with the validated data
         $organization->update($request->all());
-        return redirect()->route('organization.index')->with('success','Organization updated successfully');
+        return redirect()->route('admin.organization.index')->with('success','Organization updated successfully');
  
      }
  
@@ -89,7 +89,7 @@ class IndexController extends Controller
      public function destroy($id){
          $organization = Organization::find($id);
          $organization->delete();
-         return redirect()->route('organization.index')
+         return redirect()->route('admin.organization.index')
                          ->with('success','Organization deleted successfully');
      }
 }

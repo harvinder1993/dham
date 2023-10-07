@@ -32,13 +32,9 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array
-     */
+
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'type' => 'type',
     ];
     /**
      * Interact with the user's first name.
@@ -49,7 +45,25 @@ class User extends Authenticatable
     protected function type(): Attribute
     {
         return new Attribute(
-            get: fn ($value) =>  ["user", "admin", "member"][$value],
+            get: function ($value) {
+                return ["admin", "organization", "helping-center", "user"][$value];
+            },
         );
     }
+
+    public function organizations()
+    {
+        return $this->hasMany(Organization::class);
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'user_id');
+    }
+
+    public function helpingCenters()
+    {
+        return $this->hasMany(HelpingCenter::class);
+    }
+    
 }

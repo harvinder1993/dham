@@ -7,7 +7,7 @@
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
               <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3 d-flex justify-content-between align-items-center">
                   <h6 class="text-white text-capitalize ps-3">Organizations List</h6>
-                  <a href="{{ route('organization.create') }}" class="btn btn-sm mb-0 me-3 bg-gradient-dark">Add Organization</a>
+                  <a href="{{ route('admin.organization.create') }}" class="btn btn-sm mb-0 me-3 bg-gradient-dark">Add Organization</a>
               </div>
             </div>  
             <div class="card-body px-0 pb-2">
@@ -62,11 +62,11 @@
                         </div>
                       </td>
                       <td class="align-middle text-center">
-                      <form action="{{ route('organization.destroy',$organization->id) }}" method="POST">
-                        <a class="text-secondary font-weight-bold text-xs" href="{{ route('organization.edit',$organization->id) }}">Edit</a>
+                      <form action="{{ route('admin.organization.destroy',$organization->id) }}" method="POST">
+                        <a class="text-secondary font-weight-bold text-xs" href="{{ route('admin.organization.edit',$organization->id) }}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="text-secondary font-weight-bold text-xs">Delete</button>
+                        <button type="submit" class="text-secondary font-weight-bold text-xs"><i class="fa fa-trash" aria-hidden="true"></i></button>
                         </form>
                       </td>
                     </tr>
@@ -78,6 +78,6 @@
           </div>
         </div>
       </div>
-      @include('layouts.footer')
+      @include('layouts.backend.footer')
     </div>
 @endsection
