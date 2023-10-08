@@ -1,0 +1,48 @@
+.planWrapper.detailPlan ul {
+  border: 1px solid #e63a47;
+  border-radius: 20px;
+  padding: 20px;
+  list-style: none;
+}
+.planWrapper.detailPlan ul li {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 18px;
+}
+.planWrapper.detailPlan ul li strong {
+  width: 150px;
+}
+.planWrapper.detailPlan ul li p {
+  margin-bottom: 0px;
+}
+.planWrapper.detailPlan ul li:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.planWrapper.detailPlan .description {
+  margin-top: 30px;
+}
+.planWrapper.detailPlan .description h3 {
+  font-family: "Rajdhani-SemiBold";
+  font-size: 28px;
+}
+.planWrapper.detailPlan .description p {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 575px) {
+  .planWrapper.detailPlan ul {
+    padding: 10px;
+  }
+  .planWrapper.detailPlan ul li {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+  .planWrapper.detailPlan ul li strong {
+    width: 120px;
+  }
+  .planWrapper.detailPlan .description p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=detailPlan.css.map */

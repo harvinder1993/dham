@@ -20,20 +20,7 @@ class HomeController extends Controller
     * @return \Illuminate\Contracts\Support\Renderable
     */
     public function index(){
-        return view('home');
+        return view('welcome');
     } 
-    /**
-    * Show the application dashboard.
-    * @return \Illuminate\Contracts\Support\Renderable
-    */
-    public function adminHome(){
-        return view('adminHome');
-    }
-    /**
-    * Show the application dashboard.
-    * @return \Illuminate\Contracts\Support\Renderable
-    */
-    public function memberHome(){
-        return view('memberHome');
-    }
+   
 }

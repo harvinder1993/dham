@@ -1,0 +1,1176 @@
+@font-face {
+  font-family: "Urbanist-Regular";
+  src: url("../fonts/Urbanist-Regular.eot");
+  src: local("Urbanist-Regular"), local("Urbanist-Regular"), url("../fonts/Urbanist-Regular.eot") format("embedded-opentype"), url("../fonts/Urbanist-Regular.woff") format("woff"), url("../fonts/Urbanist-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Urbanist-Medium";
+  src: url("../fonts/Urbanist-Medium.eot");
+  src: local("Urbanist-Medium"), local("Urbanist-Medium"), url("../fonts/Urbanist-Medium.eot") format("embedded-opentype"), url("../fonts/Urbanist-Medium.woff") format("woff"), url("../fonts/Urbanist-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Urbanist-SemiBold";
+  src: url("../fonts/Urbanist-SemiBold.eot");
+  src: local("Urbanist-SemiBold"), local("Urbanist-SemiBold"), url("../fonts/Urbanist-SemiBold.eot") format("embedded-opentype"), url("../fonts/Urbanist-SemiBold.woff") format("woff"), url("../fonts/Urbanist-SemiBold.ttf") format("truetype");
+  font-weight: Bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rajdhani-SemiBold";
+  src: url("../fonts/Rajdhani-SemiBold.eot");
+  src: local("Rajdhani-SemiBold"), local("Rajdhani-SemiBold"), url("../fonts/Rajdhani-SemiBold.eot") format("embedded-opentype"), url("../fonts/Rajdhani-SemiBold.woff") format("woff"), url("../fonts/Rajdhani-SemiBold.ttf") format("truetype");
+  font-weight: Bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fontawesome";
+  src: url("../fonts/Fontawesome.eot");
+  src: local("Fontawesome"), local("Fontawesome"), url("../fonts/Fontawesome.eot") format("embedded-opentype"), url("../fonts/Fontawesome.otf") format("otf"), url("../fonts/Fontawesome.woff") format("woff"), url("../fonts/Fontawesome.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+a,
+button {
+  transition: 1s all ease-in-out;
+}
+
+.dropdown-item.active {
+  background-color: #e63a47;
+}
+
+.dropdown-item:active {
+  background-color: #e63a47;
+}
+
+:root {
+  --animate-duration: 700ms;
+  --animate-delay: 0.7s;
+}
+
+body {
+  font-family: "Urbanist-Regular";
+  color: #000;
+  font-size: 14px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+/* Header Scss start */
+header.header {
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+header.header a {
+  text-decoration: none;
+}
+header.header nav.navbar .rightSideBtns {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header.header nav.navbar .rightSideBtns a.phone {
+  font-family: "Urbanist-Medium";
+  color: #000;
+  font-size: 18px;
+  padding-right: 20px;
+  border-right: 1px solid #c3c9d1;
+}
+header.header nav.navbar .rightSideBtns a.phone img {
+  margin-right: 10px;
+}
+header.header nav.navbar .rightSideBtns a.loginbtn {
+  border-radius: 10px;
+  border: 1px solid #e63a47;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Urbanist-Medium";
+  margin: 0 10px 0 20px;
+  color: #e63a47;
+}
+header.header nav.navbar .rightSideBtns a.loginbtn img {
+  margin-right: 10px;
+}
+header.header nav.navbar .rightSideBtns a.signupBtn {
+  border-radius: 10px;
+  border: 1px solid #e63a47;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Urbanist-Medium";
+  margin: 0 0px 0 20px;
+  background-color: #e63a47;
+  color: #FFF;
+}
+header.header nav.navbar .logo_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header.header nav.navbar .logo_menu a.navbar-brand img {
+  width: 30px;
+  height: auto;
+}
+header.header .userDropdown {
+  margin-left: 20px;
+}
+header.header .userDropdown button {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+header.header .userDropdown button .profileImage img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  padding: 2px;
+  border: 1px solid #999;
+}
+header.header .userDropdown button::after {
+  display: none;
+}
+header.header .userDropdown button:active {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+header.header .userDropdown .dropdown-menu {
+  width: 220px;
+  left: auto !important;
+  right: 0;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+header.header .userDropdown .dropdown-menu .profile_name_image img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+header.header .userDropdown .dropdown-menu .profile_name_image h5 {
+  font-weight: 800;
+  margin: 10px 0;
+}
+header.header .userDropdown .dropdown-menu li a {
+  padding: 12px 12px 12px 50px;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+header.header .userDropdown .dropdown-menu li a img {
+  width: 30px;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+/* Header Scss end */
+.slider img.mobileSlide {
+  display: none;
+}
+.slider .container .carousel-caption {
+  bottom: auto;
+  left: 15%;
+  color: #fff;
+  text-align: left;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.slider .container .carousel-caption h3 {
+  font-weight: bold;
+  line-height: 1.114;
+  font-family: "Rajdhani-SemiBold";
+  font-size: 70px;
+}
+.slider .container .carousel-caption p {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Urbanist-Regular";
+}
+.slider .container .carousel-caption a {
+  border-radius: 10px;
+  background-color: rgb(230, 58, 71);
+  width: 156px;
+  height: 42px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Urbanist-SemiBold";
+}
+.slider .carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 100px;
+}
+.slider .carousel-indicators button.active[data-bs-target] {
+  background-color: rgb(230, 58, 71);
+  border: 1px solid rgb(230, 58, 71);
+}
+
+.sliderSection {
+  padding: 80px 30px;
+}
+.sliderSection .title_Icon h2 {
+  font-size: 42px;
+  margin: 15px;
+  font-family: "Rajdhani-SemiBold";
+}
+.sliderSection .title_Icon p {
+  font-size: 20px;
+  font-family: "Urbanist-Regular";
+}
+.sliderSection .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sliderSection .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sliderSection .swiper .swiper-slide .slideInner .slide_bottom_text_logo {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: left;
+  padding: 0 15px;
+  z-index: 2;
+}
+.sliderSection .swiper .swiper-slide .slideInner .slide_bottom_text_logo h5 {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-family: "Urbanist-Regular";
+}
+.sliderSection .swiper .swiper-slide .slideInner .slide_bottom_text_logo p {
+  font-size: 12px;
+  margin-bottom: 0;
+  font-family: "Urbanist-Regular";
+}
+.sliderSection .swiper .swiper-slide .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  opacity: 0;
+  transition: 0.5s all ease-in-out;
+  z-index: 1;
+  width: 100%;
+}
+.sliderSection .swiper .swiper-slide .overlay .transform50 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 66%;
+}
+.sliderSection .swiper .swiper-slide .overlay .transform50 .datePick {
+  margin-bottom: 50px;
+}
+.sliderSection .swiper .swiper-slide .overlay .transform50 p {
+  font-size: 14px;
+  font-family: "Urbanist-Regular";
+}
+.sliderSection .swiper .swiper-slide:hover .overlay {
+  opacity: 1;
+}
+.sliderSection .swiper .swiper-button-prev,
+.sliderSection .swiper .swiper-button-next {
+  background-image: none !important;
+  width: auto;
+  height: auto;
+  margin-top: -35px;
+}
+.sliderSection .swiper .swiper-button-prev::after,
+.sliderSection .swiper .swiper-button-next::after {
+  display: none !important;
+}
+.sliderSection .swiper-grid-column > .swiper-wrapper {
+  flex-direction: inherit;
+}
+
+.mapSection {
+  background-image: url("../images/storybg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 180px 0;
+}
+.mapSection .title_Icon h2 {
+  font-size: 42px;
+  margin: 15px;
+  font-family: "Rajdhani-SemiBold";
+  color: #fff;
+}
+.mapSection .title_Icon p {
+  font-size: 20px;
+  font-family: "Urbanist-Regular";
+  max-width: 670px;
+  margin: auto;
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+.mapSection .mapBlock {
+  position: relative;
+}
+.mapSection .mapBlock iframe {
+  border-radius: 12px;
+  box-shadow: 0px 10px 19.52px 12.48px rgba(0, 0, 0, 0.2);
+}
+.mapSection .mapBlock .mapContent {
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 19.52px 12.48px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  z-index: 11;
+  max-width: 80%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 50px 20px;
+  bottom: -110px;
+  min-height: 280px;
+}
+.mapSection .mapBlock .mapContent .imgFull img {
+  width: 100%;
+}
+.mapSection .mapBlock .mapContent h3 {
+  font-size: 22px;
+  font-family: "Urbanist-SemiBold";
+}
+.mapSection .mapBlock .mapContent ul {
+  padding: 0;
+  list-style: none;
+}
+.mapSection .mapBlock .mapContent ul li {
+  font-size: 17px;
+  font-family: "Urbanist-Regular";
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  font-family: "Urbanist-Regular";
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Footer scss start */
+footer.footer {
+  background-image: url("../images/footerBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  padding: 45px 15px 0 15px;
+  position: relative;
+}
+footer.footer .footerMenu ul.menuLinks li::after {
+  border-right: 1px solid #fff;
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  right: -25px;
+}
+footer.footer .footerMenu ul.menuLinks li:last-child::after {
+  display: none;
+}
+footer.footer .footerMenu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+footer.footer .footerMenu ul li {
+  margin: 0 25px;
+  position: relative;
+}
+footer.footer .footerMenu ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+  font-family: "Urbanist-Regular";
+}
+footer.footer .footerMenu ul.socialMenu li a {
+  font-size: 30px;
+}
+footer.footer .footerLogoFirst img {
+  width: 100%;
+  display: none;
+}
+footer.footer .footerLogoSecond img {
+  display: none;
+  width: 100%;
+}
+footer.footer .copyright {
+  padding: 20px 0;
+  border-top: 1px solid #191919;
+}
+footer.footer .copyright p {
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Urbanist-Regular";
+}
+
+/* Footer scss start */
+@media (min-width: 1550px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1440px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 65px;
+  }
+  .slider .container .carousel-caption {
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  footer.footer {
+    padding: 20px 15px 0 15px;
+  }
+  footer.footer .footerMenu ul {
+    margin: 5px 0;
+  }
+  footer.footer .footerMenu ul li {
+    margin: 0 15px;
+  }
+  footer.footer .footerMenu ul li a {
+    font-size: 14px;
+  }
+  footer.footer .footerMenu ul li::after {
+    height: 12px !important;
+    right: -15px !important;
+    top: 4px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  header.header nav.navbar .rightSideBtns a.signupBtn, header.header nav.navbar .rightSideBtns a.loginbtn {
+    padding: 10px 12px;
+    font-size: 14px;
+    margin: 0 0px 0 10px;
+  }
+  header.header nav.navbar .rightSideBtns a.phone {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  header.header nav.navbar .rightSideBtns a.phone img {
+    margin-right: 5px;
+  }
+  footer.footer .copyright {
+    padding: 12px 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .pageWrapper .dashboardContent {
+    margin-left: 0 !important;
+  }
+  header.header nav.navbar .logo_menu {
+    width: 60%;
+  }
+  header.header nav.navbar .logo img {
+    max-width: 150px;
+  }
+  header.header nav.navbar a.phone {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  header.header nav.navbar a.loginbtn,
+  header.header nav.navbar a.signupBtn {
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+    margin: 0 0px 0 10px;
+  }
+  .slider .container .carousel-caption {
+    max-width: 400px;
+  }
+  .slider .container .carousel-caption h3 {
+    font-size: 40px;
+  }
+  .slider .container .carousel-caption p {
+    font-size: 12px;
+  }
+  .mapSection .mapBlock .mapContent h3 {
+    font-size: 16px;
+  }
+  .mapSection .mapBlock .mapContent ul li {
+    font-size: 14px;
+  }
+  .sliderSection .title_Icon h2,
+  .mapSection .title_Icon h2 {
+    font-size: 28px;
+    margin: 15px 0 0;
+  }
+  footer.footer {
+    background-image: url("../images/footerBg.jpg");
+    padding: 65px 15px 0 15px;
+    background-repeat: repeat;
+    background-size: auto;
+  }
+  footer.footer .footerLogoFirst img, footer.footer .footerLogoSecond img {
+    display: block;
+  }
+  footer.footer .footerMenu ul.menuLinks li {
+    margin: 0 10px;
+  }
+  footer.footer .footerMenu ul.menuLinks li::after {
+    right: -10px !important;
+  }
+  footer.footer .footerMenu ul.menuLinks li a {
+    font-size: 15px;
+  }
+  footer.footer .footerMenu .text-center img {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header.header nav.navbar .logo_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+  }
+  header.header .mobileView {
+    flex-direction: column;
+  }
+  header.header .rightSideBtns {
+    width: 100%;
+  }
+  header.header .rightSideBtns a.phone {
+    border: none !important;
+  }
+  header.header .rightSideBtns .d-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .slider img.d-block.desktopSlide {
+    display: none !important;
+  }
+  .slider img.mobileSlide {
+    display: block;
+  }
+  .slider .container .carousel-caption {
+    color: #fff;
+    text-align: center;
+    transform: none;
+    top: auto;
+    bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 8%;
+    right: 8%;
+    margin: auto;
+    max-width: 420px;
+    padding: 0;
+  }
+  .slider .container .carousel-caption h3 {
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+  .slider .container .carousel-caption p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .slider .container .carousel-caption a {
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+  }
+  .mapSection {
+    padding: 40px 0 20px 0;
+  }
+  .mapSection .title_Icon p {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .mapSection .mapBlock {
+    margin: 20px 0;
+  }
+  .mapSection .mapBlock .mapContent {
+    position: static;
+    max-width: 100%;
+  }
+  footer.footer {
+    padding: 30px 5px 0 5px;
+  }
+  footer.footer .footerLogoFirst, footer.footer .footerLogoSecond {
+    text-align: center;
+  }
+  footer.footer .footerLogoFirst img, footer.footer .footerLogoSecond img {
+    max-width: 300px;
+    margin: auto;
+  }
+  footer.footer .footerMenu ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  footer.footer .footerMenu ul li {
+    margin: 5px 12px;
+    position: relative;
+  }
+  footer.footer .footerMenu ul li::after {
+    height: 75% !important;
+    right: -13px !important;
+    top: 3px;
+  }
+  footer.footer .footerMenu ul li a {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  footer.footer .copyright p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .mapSection .mapBlock .mapContent {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .mapSection .mapBlock .mapContent .imgFull {
+    margin-bottom: 15px;
+  }
+  .mapSection .mapBlock .mapContent .imgFull img {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header.header nav.navbar .rightSideBtns .d-flex {
+    justify-content: center;
+  }
+  header.header nav.navbar .rightSideBtns .d-flex a.loginbtn, header.header nav.navbar .rightSideBtns .d-flex a.signupBtn {
+    padding: 8px 20px;
+    font-size: 14px;
+    margin: 0px;
+    border-radius: 5px;
+    border-radius: 5px;
+  }
+  header.header nav.navbar .rightSideBtns .d-flex .wrapBtns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0 0 0;
+  }
+  .slider .carousel-inner .carousel-caption {
+    bottom: 35px;
+  }
+  .slider .carousel-inner .carousel-caption h3 br {
+    display: none;
+  }
+  .slider .carousel-inner .carousel-caption p br {
+    display: none;
+  }
+  .slider .carousel-inner img.d-block {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .slider .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+  }
+  .sliderSection {
+    padding: 30px 15px;
+  }
+  footer.footer .footerMenu .text-center img {
+    width: 250px;
+  }
+  footer.footer .footerMenu ul li a {
+    font-size: 14px !important;
+  }
+}
+/* Import files */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000 !important;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000 !important;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000 !important;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000 !important;
+}
+
+.authPage {
+  width: 100%;
+  min-height: 800px;
+  position: relative;
+  background-image: url("../images/storybg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.authPage .autoForm {
+  max-width: 450px;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 100%;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+}
+.authPage .autoForm h1 {
+  color: #000;
+  font-family: "Rajdhani-SemiBold";
+  font-size: 52px;
+}
+.authPage .autoForm label.form-label,
+.authPage .autoForm label.form-check-label {
+  color: #000;
+}
+.authPage .autoForm .icon_input input.form-control {
+  background-image: url("../images/userBlack.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+.authPage .autoForm .icon_input_email input.form-control {
+  background-image: url("../images/emailBlack.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+.authPage .autoForm .icon_input_password input.form-control {
+  background-image: url("../images/reset-passwordBlack.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+.authPage .autoForm input.form-control {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0px;
+  color: #000;
+  height: 55px;
+  padding-left: 50px;
+}
+.authPage .autoForm input.form-control:focus {
+  box-shadow: none;
+  border-bottom: 1px solid transparent;
+  -o-border-image: linear-gradient(0.25turn, rgb(255, 249, 34), rgb(255, 0, 128), rgba(56, 2, 155, 0));
+     border-image: linear-gradient(0.25turn, rgb(255, 249, 34), rgb(255, 0, 128), rgba(56, 2, 155, 0));
+  border-image-slice: 1;
+  width: 100%;
+}
+.authPage .autoForm button.btn.btn-primary.loginBtn {
+  background: #e63a47;
+  border: 1px solid #e63a47;
+  padding: 10px 35px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.authPage .autoForm .form-check-input[type=checkbox] {
+  border: 1px solid #333;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .authPage {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .authPage .autoForm {
+    max-width: 90%;
+  }
+}
+.pageWrapper .dashboardContent {
+  padding: 50px 0;
+}
+.pageWrapper .dashboardContent h2.title {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Rajdhani-SemiBold";
+}
+.pageWrapper .dashboardContent .profileContent {
+  max-width: 100%;
+  width: 100%;
+  padding: 40px;
+}
+.pageWrapper .dashboardContent .profileContent .profileFullImg img {
+  width: 100%;
+  border-radius: 100%;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+}
+.pageWrapper .dashboardContent .profileContent .profileFullImg button.editBtn {
+  border: none;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+  padding: 5px;
+  border-radius: 100%;
+}
+.pageWrapper .dashboardContent .profileContent .profileFullImg button.editBtn .form-control[type=file] {
+  opacity: 0;
+  padding: 0;
+  position: relative;
+  bottom: 26px;
+  height: 30px;
+  width: 30px;
+  left: -4px;
+}
+.pageWrapper .dashboardContent .profileContent .userInfo h2 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Rajdhani-SemiBold";
+}
+.pageWrapper .dashboardContent .profileContent .userInfo p {
+  font-size: 18px;
+  font-family: "Urbanist-Medium";
+  color: #b7b7b7;
+}
+.pageWrapper .dashboardContent .profileContent .userInfo p strong {
+  color: rgba(0, 0, 0, 0.5);
+}
+.pageWrapper .dashboardContent .profileContent .userInfo .fileUpload {
+  min-height: 75px;
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fcfcfc;
+}
+.pageWrapper .dashboardContent .profileContent .userInfo .fileUpload input#formFile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.pageWrapper .dashboardContent .profileContent .userInfo .fileUpload span {
+  padding: 21px 10px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9c9c9;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-family: "Urbanist-Regular";
+}
+.pageWrapper .dashboardContent .profileContent button.editBtn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+.pageWrapper .dashboardContent .detailInfo h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Rajdhani-SemiBold";
+}
+.pageWrapper .dashboardContent .detailInfo input#staticEmail, .pageWrapper .dashboardContent .detailInfo input.form-control {
+  border: 1px solid #dee2e6;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  height: 50px;
+}
+.pageWrapper .dashboardContent .detailInfo label.col-form-label {
+  font-family: "Urbanist-Medium";
+}
+.pageWrapper .dashboardContent .detailInfo input.form-control.saveBtn {
+  border-radius: 10px;
+  border: 1px solid #e63a47;
+  padding: 10px 30px !important;
+  font-size: 18px;
+  font-family: "Urbanist-Medium";
+  margin: 0;
+  background-color: #e63a47;
+  color: #fff;
+  width: auto;
+}
+
+@media only screen and (max-width: 1350px) {
+  .pageWrapper .dashboardContent .profileContent .userInfo .fileUpload span {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .pageWrapper .dashboardContent .profileContent .userInfo p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .pageWrapper .dashboardContent .profileContent .userInfo h2 {
+    font-size: 42px;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .pageWrapper .dashboardContent .profileContent {
+    padding: 20px;
+  }
+  .pageWrapper .dashboardContent .profileContent .userInfo h2 {
+    font-size: 24px;
+  }
+  .pageWrapper .dashboardContent .profileContent .userInfo p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .pageWrapper .dashboardContent {
+    padding: 30px 0;
+  }
+  .pageWrapper .dashboardContent h2.title {
+    font-size: 36px;
+  }
+}
+.sidebarWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e63a47;
+  border-radius: 20px;
+}
+.sidebarWrapper .logoWrapper a {
+  text-decoration: none;
+}
+.sidebarWrapper .logoWrapper a h1 {
+  color: #333;
+  font-family: "Rajdhani-SemiBold";
+  font-size: 38px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebarWrapper ul.sidebarMainMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebarWrapper ul.sidebarMainMenu h2.title {
+  background: #e63a47;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 28px;
+  border-radius: 18px 18px 0 0;
+}
+.sidebarWrapper ul.sidebarMainMenu li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 25px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-family: "Urbanist-SemiBold";
+}
+.sidebarWrapper ul.sidebarMainMenu li a:hover {
+  background-color: #e63a47;
+  color: #fff;
+}
+.sidebarWrapper ul.sidebarMainMenu li a.active {
+  background-color: #e63a47;
+  color: #fff;
+}
+.sidebarWrapper ul.sidebarMainMenu li:last-child a {
+  border-bottom: none;
+}
+
+.planWrapper {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.planWrapper td, .planWrapper th {
+  border-left: solid black 1px;
+  border-top: solid black 1px;
+}
+.planWrapper th {
+  border-top: none;
+}
+.planWrapper td:first-child, .planWrapper th:first-child {
+  border-left: none;
+}
+.planWrapper table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: solid #e63a47 1px;
+  border-radius: 20px;
+  width: 100%;
+}
+.planWrapper table th:first-child {
+  border-radius: 20px 0 0 0;
+}
+.planWrapper table th:last-child {
+  border-radius: 0 20px 0 0;
+}
+.planWrapper table tr:last-child td:first-child {
+  border-radius: 0 0 0 20px;
+}
+.planWrapper table tr:last-child td:last-child {
+  border-radius: 0 0 20px 0;
+}
+.planWrapper table th {
+  font-family: "Urbanist-SemiBold";
+  font-size: 20px;
+  background-color: #e63a47;
+  color: #fff;
+}
+.planWrapper table td, .planWrapper table th {
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+.planWrapper table td {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.planWrapper table td span.active {
+  background: green;
+  color: #fff;
+  padding: 1px 6px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.planWrapper table td span.deactive {
+  background: red;
+  color: #fff;
+  padding: 1px 6px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.planWrapper table td a.viewBtn {
+  background: #e63a47;
+  color: #fff;
+  padding: 8px 15px;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebarWrapper {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+.planWrapper.detailPlan ul {
+  border: 1px solid #e63a47;
+  border-radius: 20px;
+  padding: 20px;
+  list-style: none;
+}
+.planWrapper.detailPlan ul li {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 18px;
+}
+.planWrapper.detailPlan ul li strong {
+  width: 150px;
+}
+.planWrapper.detailPlan ul li p {
+  margin-bottom: 0px;
+}
+.planWrapper.detailPlan ul li:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.planWrapper.detailPlan .description {
+  margin-top: 30px;
+}
+.planWrapper.detailPlan .description h3 {
+  font-family: "Rajdhani-SemiBold";
+  font-size: 28px;
+}
+.planWrapper.detailPlan .description p {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 575px) {
+  .planWrapper.detailPlan ul {
+    padding: 10px;
+  }
+  .planWrapper.detailPlan ul li {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+  .planWrapper.detailPlan ul li strong {
+    width: 120px;
+  }
+  .planWrapper.detailPlan .description p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
