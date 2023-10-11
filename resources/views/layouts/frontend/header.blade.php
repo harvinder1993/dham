@@ -13,4 +13,5 @@
   <link rel="stylesheet" href="{{ asset('frontend/css/font-awesome.min.css')}}" />
   <link rel="stylesheet" href="{{ asset('frontend/scss/style.css')}}" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css" />
+  
 </head>

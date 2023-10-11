@@ -27,7 +27,8 @@ class OrganizationFormValidationRequest extends FormRequest
             'phone' => 'required|string',
 		    'address' => 'required|string',
 		    'estd' => 'required|string',
-		    'contact_person' => 'required|string'
+		    'contact_person' => 'required|string',
+            'helping_center' => 'required'
         ];
     }
 }

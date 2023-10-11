@@ -16,7 +16,8 @@ class Organization extends Model
 		'phone',
 		'address',
 		'estd',
-		'contact_person'
+		'contact_person',
+        'helping_center_id'
 	];
 
     public function user()
@@ -27,5 +28,10 @@ class Organization extends Model
 	public function products()
     {
         return $this->hasMany(Product::class, 'organization_id');
+    }
+
+    public function helping_center()
+    {
+        return $this->belongsTo(HelpingCenter::class, 'helping_center_id');
     }
 }

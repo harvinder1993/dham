@@ -13,7 +13,7 @@ class ProductSeeder extends Seeder
         $products = [
             [
                 'user_id' => 1,
-                'organization_id' => 1,
+                'organization_id' => 6,
                 'name' => 'Product 1',
                 'description' => 'Description for Product 1',
                 'price' => 99.99,
@@ -25,7 +25,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'user_id' => 1,
-                'organization_id' => 1,
+                'organization_id' => 6,
                 'name' => 'Product 2',
                 'description' => 'Description for Product 2',
                 'price' => 79.99,
@@ -37,7 +37,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'user_id' => 1,
-                'organization_id' => 2,
+                'organization_id' => 7,
                 'name' => 'Product 3',
                 'description' => 'Description for Product 3',
                 'price' => 129.99,
@@ -49,7 +49,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'user_id' => 1,
-                'organization_id' => 2,
+                'organization_id' => 6,
                 'name' => 'Product 4',
                 'description' => 'Description for Product 4',
                 'price' => 149.99,
@@ -61,7 +61,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'user_id' => 1,
-                'organization_id' => 1,
+                'organization_id' => 7,
                 'name' => 'Product 5',
                 'description' => 'Description for Product 5',
                 'price' => 69.99,

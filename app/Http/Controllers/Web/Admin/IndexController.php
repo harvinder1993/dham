@@ -28,4 +28,6 @@ class IndexController extends Controller
         $helping_centers = HelpingCenter::count();
         return view('admin.index', compact(['users','organizations','products','helping_centers']));
     }
+
+    
 }

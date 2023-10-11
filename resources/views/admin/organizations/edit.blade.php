@@ -57,6 +57,17 @@
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
                     </div>
+                    <div class="input-group input-group-outline mb-3 is-filled">
+                    <label class="form-label">Helping Center</label>
+                        <select class="form-control" id="helping_center" name="helping_center">
+                          @foreach($helping_centers as $helping_center)
+                            <option value="{{ $helping_center->id }}" {{ ($organization->helping_center_id == $helping_center->id) ? 'selected' : '' }}>{{ $helping_center->name }}</option>
+                          @endforeach 
+                        </select>
+                        @error('helping_center')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
                     <div class="text-left">
                       <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg mt-4 mb-0">Update</button>
                     </div>

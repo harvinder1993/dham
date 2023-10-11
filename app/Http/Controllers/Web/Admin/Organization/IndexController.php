@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\OrganizationFormValidationRequest;
 use App\Models\Organization;
+use App\Models\HelpingCenter;
+use Illuminate\Support\Facades\Auth;
+
 class IndexController extends Controller
 {
     /**
@@ -19,7 +22,7 @@ class IndexController extends Controller
      * Index Function
      */
     public function index(){
-        $organizations = Organization::all();
+        $organizations = Organization::get();
         return view('admin.organizations.index', compact('organizations'));
     }
 
@@ -27,7 +30,8 @@ class IndexController extends Controller
      * Create Organization
      */
     public function create(){
-        return view('admin.organizations.create');
+        $helping_centers = HelpingCenter::all();
+        return view('admin.organizations.create',compact('helping_centers'));
     }
 
     /**
@@ -39,12 +43,14 @@ class IndexController extends Controller
         
         // Process the form data, e.g., save it to the database
         Organization::create([
+            'user_id' => Auth::user()->id,
             'name' => $validatedData['name'],
             'email' => $validatedData['email'],
             'phone' => $validatedData['phone'],
             'address' => $validatedData['address'],
             'estd' => $validatedData['estd'],
-            'contact_person' => $validatedData['contact_person']
+            'contact_person' => $validatedData['contact_person'],
+            'helping_center_id' => $validatedData['helping_center']
         ]);
         
         // Redirect to a success page or return a response
@@ -57,7 +63,8 @@ class IndexController extends Controller
 
     public function edit($id){
         $organization = Organization::find($id);
-        return view('admin.organizations.edit',compact('organization'));
+        $helping_centers = HelpingCenter::all();
+        return view('admin.organizations.edit',compact(['organization','helping_centers']));
     }
 
      /**

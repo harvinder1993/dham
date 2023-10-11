@@ -1,4 +1,4 @@
-@extends('layouts.backend.header')
+@include('layouts.backend.header')
 <body>
     <div id="app">
     @include('layouts.backend.sidebar')

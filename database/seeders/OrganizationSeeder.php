@@ -19,6 +19,7 @@ class OrganizationSeeder extends Seeder
                 'address' => '123 Main Street',
                 'estd' => '2020-01-01',
                 'contact_person' => 'John Doe',
+                'helping_center_id' => 1
             ],
             [
                 'user_id' => 1,
@@ -28,6 +29,7 @@ class OrganizationSeeder extends Seeder
                 'address' => '456 Elm Street',
                 'estd' => '2019-05-15',
                 'contact_person' => 'Jane Smith',
+                'helping_center_id' => 1
             ],
             [
                 'user_id' => 1,
@@ -37,6 +39,7 @@ class OrganizationSeeder extends Seeder
                 'address' => '789 Oak Avenue',
                 'estd' => '2018-10-20',
                 'contact_person' => 'Alice Johnson',
+                'helping_center_id' => 3
             ],
             [
                 'user_id' => 1,
@@ -46,6 +49,7 @@ class OrganizationSeeder extends Seeder
                 'address' => '321 Cedar Lane',
                 'estd' => '2017-12-05',
                 'contact_person' => 'Bob Wilson',
+                'helping_center_id' => 2
             ],
             [
                 'user_id' => 1,
@@ -55,6 +59,7 @@ class OrganizationSeeder extends Seeder
                 'address' => '555 Maple Road',
                 'estd' => '2016-08-15',
                 'contact_person' => 'Eve Adams',
+                'helping_center_id' => 2
             ],
             // Add more organization data as needed
         ];
